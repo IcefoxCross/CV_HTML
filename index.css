@@ -1,0 +1,188 @@
+:root {
+    --mainColor: #479099;
+    --secondaryColor: #676870;
+    --dataColor: #9A8179;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header section {
+    width: 50%;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li p {
+    font-size: 0.9em;
+    width: 90%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+i {
+    color: var(--mainColor);
+    font-size: medium;
+    margin-left: 5px;
+}
+
+h1 { font-size: 36px; font-weight: lighter; margin-bottom: 0; }
+h2 { font-size: 20px; font-weight: lighter; }
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: #E6E6E6;
+}
+
+.color {
+    color: var(--mainColor);
+}
+
+.color-sec {
+    color: var(--secondaryColor);
+}
+
+.cv-container {
+    width: 210mm;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(179,179,179,1);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(179,179,179,1);
+    box-shadow: 0px 0px 5px 2px rgba(179,179,179,1);
+}
+
+.head-left {
+    display: block;
+    margin-top: 1%;
+}
+
+.head-right {
+    margin-top: 2%;
+    align-items: flex-end;
+}
+
+.bio {
+    font-size: 12px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 30px;
+    grid-template-areas: "main-left main-right";
+}
+
+.main-left { grid-area: main-left; }
+
+.main-right { grid-area: main-right; }
+
+.titulo {
+    display: inline-block;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: auto;
+}
+
+.info {
+    text-align: right;
+    font-size: 12px;
+}
+
+.info li {
+    padding-bottom: 10px;
+}
+
+.descripcion li:before {
+    content: "- ";
+    color: var(--mainColor);
+    font-size: 28px;
+}
+
+.nombre {
+    margin-bottom: 0;
+}
+
+.sub-nombre {
+    font-size: 16px;
+    font-weight: initial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.datos {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    font-size: 12px;
+    color: var(--dataColor);
+}
+
+.descripcion {
+    margin-top: 0;
+    font-size: 13px;
+    width: 80%;
+}
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+    width: 90%;
+}
+
+.habilidades li {
+    background-color: var(--mainColor);
+    border-radius: 3px;
+    color: white;
+    margin-right: 0.5em;
+    margin-top: 0.6em;
+    margin-bottom: 0.5em;
+    padding: 5px 10px 5px 10px;
+}
+
+.nombre-proyecto {
+    font-weight: initial;
+    margin-bottom: 0;
+}
+
+.idioma {
+    font-size: 15px;
+    display: flex;
+    width: 80%;
+}
+
+.puntos {
+    display: flex;
+}
+
+.punto {
+    height: 20px;
+    width: 20px;
+    border-style: solid;
+    border-width: thin;
+    border-color: var(--mainColor);
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.punto-lleno {
+    background-color: var(--mainColor);
+}
